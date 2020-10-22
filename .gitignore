@@ -1,4 +1,6 @@
-#.exe4j
-#.tmp
-#.log
-#.exe
+GuessNumber/out
+GuessNumber/src/META-INF
+*.exe4j
+*.tmp
+*.log
+*.exe
