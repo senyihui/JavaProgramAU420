@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Fibonacci.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="213.0" minHeight="188.0" prefHeight="192.0" />
+      <RowConstraints maxHeight="52.0" minHeight="27.0" prefHeight="48.0" />
+   </rowConstraints>
+   <children>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: lightblue;" GridPane.rowIndex="1">
+        <buttons>
+            <TextField fx:id="inputField"/>
+          <Button fx:id="Btn" onAction="#handleCalculateButtonAction" mnemonicParsing="false" text="Calculate" />
+        </buttons>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ButtonBar>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" prefHeight="192.0" prefWidth="234.0" style="-fx-background-color: lightblue;" text="number">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="GuessNumber.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="331.0" prefWidth="345.0" GridPane.columnIndex="1">
+         <children>
+            <Button fx:id="guessBtn" onAction="#handleGuessButtonAction" layoutX="165.0" layoutY="51.0" mnemonicParsing="false" text="Guess" />
+            <TextArea fx:id="outputArea" layoutX="28.0" layoutY="107.0" prefHeight="165.0" prefWidth="270.0" />
+            <TextField fx:id="inputField" layoutX="28.0" layoutY="51.0" prefHeight="23.0" prefWidth="102.0" />
+            <Button fx:id="restartBtn" onAction="#handleRestartButtonAction" layoutX="230.0" layoutY="51.0" mnemonicParsing="false" text="Restart" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
